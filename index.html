@@ -14,12 +14,8 @@
 	content="width = devide-width, initial-scale = 1"> 
 	</head>
 
-<!--add the css style-->
-<link 
-	rel="stylesheet" 
-	href="w3.css"> <!-- https://www.w3schools.com/w3css/3/w3.css -->
-
 <style>
+
 /* Header/logo Title */
 .header {
     padding: 80px;
@@ -33,8 +29,20 @@
     font-size: 100px;
   }
 
-.nav {
-	float: center;
+/* Style the navigation bar links */
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change nav bar color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 </style>
 
@@ -49,11 +57,11 @@
 	</header>
 
 	<!-- Navigation bar -->
-	<nav class="w3-bar w3-black">
-	  <a href="#Home" class="w3-button w3-bar-item">Home</a>
-	  <a href="#Research Interests" class="w3-button w3-bar-item">Research Interests</a>
-	  <a href="#Code Projects" class="w3-button w3-bar-item">Code Projects</a>
-	  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+	<nav class="nav">
+	  <a href="#Home">Home</a>
+	  <a href="#Research Interests">Research Interests</a>
+	  <a href="#Code Projects">Code Projects</a>
+	  <a href="#Contact">Contact</a>
 	</nav>
 </body>
 </html>
