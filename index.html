@@ -16,6 +16,10 @@
 
 <style>
 
+* {
+  box-sizing: border-box;
+}
+
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +28,7 @@ body {
 
 /* Header/logo Title */
 .header {
-    padding: 40px;
+    padding: 5px;
     text-align: center;
     background: #0f7994;
     color: white;
@@ -57,7 +61,34 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.home_body_left {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.home_body_right {   
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
 </style>
+
 
 
 <!--begin creating website-->
@@ -66,7 +97,7 @@ body {
 	<!--Header-->
 	<header class="header">
 		<h1>Sean Condie</h1>
-		<p>Explorations in Biology and Computer Science</p>
+		<h3 style="font-style: italic;">Explorations in Biology and Computer Science</h3>
 	</header>
 
 	<!-- Navigation bar -->
@@ -76,5 +107,26 @@ body {
 	  <a href="#Code Projects">Code Projects</a>
 	  <a href="#Contact">Contact</a>
 	</nav>
+
+	<!--body of index-->
+	<div class="row"> <!--horazontal portion between the header and footer-->
+		<div class="home_body_left" style="display: flex; justify-content: center;"> <!--left side of the body-->
+			
+				<h2>
+					About me:
+						As a student at Trent University in Peterborough, Ontario, I became interested in the benefits of applying computer sciences to the life sciences. 
+						My goal is to help bridge the gap between the advances in computer science and biological discovery and helping discover novel techniques for diagnostics and treatment.
+						Other interests of mine revolve around statistical analysis using R studio and python and creating informative displays from complex data. 
+						I'm especially interested in cognitive models and how they can inform computational models. 
+						
+				</h2>
+			
+			</div>
+		<div class="home_body_right"> <!--right side of the body-->
+			<div class="body_image" style="display: flex; justify-content: center;">
+				<img src="photos/SeanCondie_HeadShot.png" height="324" width="285" >
+			</div>
+		</div>
+	</div>
 </body>
 </html>
